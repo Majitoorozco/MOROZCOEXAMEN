@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOROZCOEXAMEN.Registro">
+    <ContentPage.Content>
+        <Grid>
+
+            <Grid.RowDefinitions><RowDefinition ></RowDefinition>
+            </Grid.RowDefinitions><Grid.ColumnDefinitions><ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="Registro" x:Name="lblTexto" FontSize="Medium" TextColor="White" HorizontalOptions="Fill" />
+            <Label Text="Nombre:" Grid.Row="1" Grid.Column="0" FontSize="Large" ></Label>
+            <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="2"></Entry>
+
+            <Label Text="Monto Inicial:" Grid.Row="2" Grid.Column="0" FontSize="Large"></Label>
+            <Entry x:Name="txtMontoinicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="2"></Entry>
+
+            <Label Text="Pago Mensual:" Grid.Row="3" Grid.Column="0" FontSize="Large"></Label>
+            <Entry x:Name="txtPagoMensual" Keyboard="Numeric" Grid.Row="2" Grid.Column="2"></Entry>
+
+            <Button x:Name="btnGuardar"
+                    Text="Guardar informacion"
+                    Clicked="btnGuardar_Clicked"
+                    Grid.Row="4" Grid.Column="0">
+
+            </Button>
+
+           
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

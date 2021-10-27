@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOROZCOEXAMEN.Login">
+    <ContentPage.Content>
+        <Grid>
+             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="uisrael.png" WidthRequest="50" HeightRequest="50" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="30,70">
+                    <Entry Placeholder="Correo Electronico" PlaceholderColor="#A4A4A4" x:Name="txtUsuario"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="#A4A4A4" IsPassword="True" x:Name="txtPassword"/>
+                    <Button Text="Iniciar Sesion"  BackgroundColor="#0080FF" CornerRadius="10" TextColor="White" Clicked="Button_Clicked" />
+                    <Label  Text="" x:Name="lblResultado" TextColor="Blue"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

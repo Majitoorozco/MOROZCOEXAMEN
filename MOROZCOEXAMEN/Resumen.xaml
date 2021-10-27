@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOROZCOEXAMEN.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN DE INSCRIPCION" TextColor="GreenYellow"/>
+            <Label x:Name="lblNombre" TextColor="Black"/>
+            <Label x:Name="lblPagoMensual" TextColor="Black"/>
+            <Entry x:Name="txtNombre" IsReadOnly="True"/>
+            <Entry x:Name="txtPagoMensual" IsReadOnly="True"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
