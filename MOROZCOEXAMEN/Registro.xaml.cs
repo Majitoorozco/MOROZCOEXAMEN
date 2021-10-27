@@ -12,12 +12,10 @@ namespace MOROZCOEXAMEN
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
-        public Registro(string usuario, string Nombre, string Total)
+        public Registro()
         {
             InitializeComponent();
-            lblTexto.Text = "Usuario en linea: " + usuario;
-            txtNombre.Text = Nombre;
-            txtPagoMensual.Text = Total;
+           
         }
 
         private async void btnGuardar_Clicked(object sender, EventArgs e)
