@@ -19,10 +19,10 @@ namespace MOROZCOEXAMEN
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            string user = txtUsuario.Text;
-            string pass = txtPassword.Text;
+            string usuario = txtUsuario.Text;
+            string password = txtPassword.Text;
 
-            if (user == "estudiante2021" && pass == "uisrael2021")
+            if (usuario == "estudiante2021" && password == "uisrael2021")
             {
                 await Navigation.PushAsync(new Registro());
             }
